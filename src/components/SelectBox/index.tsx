@@ -21,6 +21,9 @@ export type SelectProps = Omit<Props, "getOptionLabel"> &
     getOptionLabel: (e: any) => string;
 
     size: keyof typeof sizes;
+    shape?: string;
+    variant?: string;
+    color?: string;
   }>;
 
 const SelectBox = React.forwardRef<any, SelectProps>(
